@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* versão mobile first */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url('../imagens/back-tv.jpg');
+}
+
+main{
+    width: 800px;
+}
+
+img#phone{display: none;}
+img#tablet{display: none;}
+img#print{display: none;}
+img#pc{display: none;}
+img#tv{display: block;}

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* versão mobile first */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(../imagens/back-print.jpg); /* desnecessário*/
+    
+}
+
+main{
+    border: 2px solid black;
+}
+
+main h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: black;
+}
+
+img#phone{display: none;}
+img#tablet{display: none;}
+img#print{display: block;}
+img#pc{display: none;}
+img#tv{display: none;}

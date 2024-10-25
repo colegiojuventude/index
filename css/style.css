@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* versão mobile first */
+
+/* criando variáveis no css, importante para dar manutenção depois de cores, letras */
+:root{
+    --color1: #F2F2F2;
+    --color2:#0D0D0D;
+    --color3: #038C3E;
+    --color4: #03A64A;
+    --color5: #c1d9c260;
+    --color6: #8ABF8D;
+}
+
+/* esconde barra de rolagem*/
+::-webkit-scrollbar{    
+    width: 0;
+    height: 0;;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+
+}
+
+html{
+    height: 90vw;
+}
+
+header{    
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 10vh;
+    color: white;
+    background-color: blue;
+}
+
+body{
+    background-color: var(--color1);
+    background-size: cover;
+    background-position: center center;
+}
+
+main{
+    background-color: rgba(255,255,255,0.842);
+    width: 40vw;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.493);
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+img#phone{
+    display: block;
+}
+
+img#tablet{
+    display: none;
+}
+
+img#print{
+    display: none;
+}
+
+img#pc{
+    display: none;
+}
+
+img#tv{
+    display: none;
+}
+
+section#redes-sociais {
+    text-align: right;
+    padding-right: 10px;
+    background-color: red;
+}
+
+section#redes-sociais img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.400);
+    box-sizing: border-box;
+    
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255,255,255,0.637);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.632);
+    transition: transform 0.5s, border 1s;
+    
+}
