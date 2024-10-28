@@ -86,10 +86,27 @@ img#tv{
     display: none;
 }
 
+section#menu{
+    padding-top: 1vh;
+    padding-right: 20px;
+    text-align: right;    
+}
+section#menu a{    
+    padding: 0.5vw;
+    color: var(--color2);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+section#menu a:hover{
+    color: var(--color6);
+}
+
 section#redes-sociais {
     text-align: right;
     padding-right: 10px;
-    background-color: red;
+    background-color: red;    
 }
 
 section#redes-sociais img{
@@ -99,13 +116,18 @@ section#redes-sociais img{
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.400);
     box-sizing: border-box;
-    
+    display: flex; /* Adicione esta linha */
+    justify-content: flex-end; /* Isso vai alinhar os itens à direita */
+}
+
+section#redes-sociais a {
+    float: right; /* Adicione esta linha */
+    margin: 10px; /* Você já tem margem, mas certifique-se de que não há conflito */
 }
 
 section#redes-sociais img:hover{
     border: 2px solid rgba(255,255,255,0.637);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.632);
-    transition: transform 0.5s, border 1s;
-    
+    transition: transform 0.5s, border 1s;    
 }
